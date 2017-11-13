@@ -31,4 +31,9 @@ header {
   padding:8px;
 }
 .tweet-box {
+  margin:5px;
+  background-color: #FFF;
+  border:1px solid #546971;
+  border-radius: 10px;
+  height: 70px;
 }
