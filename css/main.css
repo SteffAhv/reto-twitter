@@ -1,0 +1,34 @@
+/* Seteo de archivos */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  width:100%;
+  font-family: 'Space Mono', monospace;
+}
+/* Estilos del header */
+header {
+  width:100%;
+  background-color:#43bed5;
+  color:#FFF;
+  height: 60px;
+  text-align: center;
+  font-size: 40px;
+}
+.container {
+  background-image: url("../assets/imgs/background.jpg");
+  background-repeat: round;
+  padding: 20px 80px;
+  column-count: 2;
+}
+.static-box {
+  background-color: #FFF;
+  padding: 0px 30px;
+}
+.text-box {
+  padding:8px;
+}
+.tweet-box {
+}
