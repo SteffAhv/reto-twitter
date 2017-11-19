@@ -6,17 +6,49 @@
 }
 body {
   width:100%;
+  text-align: center;
   font-family: 'Space Mono', monospace;
 }
-/* Estilos del header */
-header {
-  width:100%;
-  background-color:#43bed5;
-  color:#FFF;
-  height: 60px;
-  text-align: center;
-  font-size: 40px;
+
+/* CLASES REUTILIZABLES */
+.celebrities {
+  padding: 0px 25px;
 }
+/* Estilos del header */
+#navigation-bar {
+  padding: 20px 80px;
+  border-bottom: 2px solid rgb(107, 107, 107);
+}
+#navigation-bar li{
+  display: inline-block;
+  margin: auto;
+}
+.icons-nav {
+  float: left;
+  font-size: 14px;
+  color: rgb(68, 68, 68);
+  padding: 0px 20px;
+}
+.fa-twitter {
+  color:rgb(29,161,242);
+}
+.tools-nav {
+  float: right;
+}
+.nav-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  margin:0px 30px;
+}
+.btn {
+  padding: 10px 25px;
+  background-color: rgb(29,161,242);
+  color:rgb(255, 255, 255);
+  border-style: none;
+  border-radius: 10px;
+}
+/* Estilos del container */
 .container {
   background-image: url("../assets/imgs/background.jpg");
   background-repeat: round;

@@ -6,23 +6,29 @@
     <title>Replica Twitter</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/21b158d175.js"></script>
   </head>
   <body>
     <header>
-      <span>Twitter</span>
+      <ul id ="navigation-bar">
+        <li class="icons-nav first"><span><i class="fa fa-home fa-2x" aria-hidden="true"></i> Home</span></li>
+        <li class="icons-nav first"><span><i class="fa fa-bell-o fa-2x" aria-hidden="true"></i> Notifications</span></li>
+        <li class="icons-nav first"><span><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> Messages</span></li>
+        <li><span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span></li>
+        <li class="tools-nav"><button class="btn">Tweet</button></li>
+        <li class="tools-nav"><img class="nav-img" src="assets/imgs/photo.jpg" alt=""></li>
+        <li class="tools-nav"><input type="text" placeholder ="Search Twitter"></li>
+      </ul>
     </header>
     <div class="container">
       <div class="static-box">
-        <h1 class="text-box">Title</h1>
-        <p class="text-box">Hola,<br>este es un párrafo</p>
+        <h1 class="text-box">Reto de Código</h1>
+        <p class="text-box">Hola,<br>soy front-end developer jr.</p>
         <hr>
-        <h2 class="text-box">Subtitle</h2>
+        <h2 class="text-box">CÓDIGO</h2>
       </div>
       <textarea id="writte-tweet"name="tweet" rows="12" cols="80"></textarea>
-      <button type="button" name="button" onclick="tweet()">TWEET</button>
-    </div>
-    <div class="tweet-box">
-      <p id="new-box"></p>
+      <button id = "btn" type="button" >TWEET</button>
     </div>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
