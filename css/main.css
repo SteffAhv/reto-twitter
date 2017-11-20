@@ -169,11 +169,14 @@ header ul li input {
 
 /* Estilos del dom */
 .tweet-box {
-  margin:5px;
-  background-color: #FFF;
-  border:1px solid #546971;
-  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border:1px solid rgba(223, 47, 93, 0.29);
+  border-radius: 5px;
+  width: 500px;
   height: 70px;
+  transform:translateX(-10%)
 }
 #count-box {
   text-align: center;
@@ -182,4 +185,9 @@ header ul li input {
   width: 35px;
   float:right;
   margin-right: 2%;
+}
+.date {
+  font-size: 12px;
+  color: rgba(184, 6, 81, 0.97);
+  text-align: left;
 }
