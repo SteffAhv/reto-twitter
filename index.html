@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Replica Twitter</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/21b158d175.js"></script>
   </head>
   <body>
@@ -16,21 +15,86 @@
         <li class="icons-nav first"><span><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> Messages</span></li>
         <li><span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span></li>
         <li class="tools-nav"><button class="btn">Tweet</button></li>
-        <li class="tools-nav"><img class="nav-img" src="assets/imgs/photo.jpg" alt=""></li>
+        <li class="tools-nav"><img class="nav-img" src="assets/images/photo.jpg" alt=""></li>
         <li class="tools-nav"><input type="text" placeholder ="Search Twitter"></li>
       </ul>
     </header>
-    <div class="container">
-      <div class="static-box">
-        <h1 class="text-box">Reto de Código</h1>
-        <p class="text-box">Hola,<br>soy front-end developer jr.</p>
-        <hr>
-        <h2 class="text-box">CÓDIGO</h2>
+    <div id="wrapper">
+        <section id = "aside-left" class="aside">
+          <div class="img-cover"></div>
+          <img class="img-ballon"src="assets/images/photo.jpg">
+          <div>
+            <div class="user-info">
+              <h1 class="followers-info">Esthefany HV</h1>
+              <h3 class="followers-info">@SteffAhv</h3>
+            </div>
+            <div class="user-data">
+              <div class="box-text">
+                <p class="followers-info">Tweets</p>
+                <p class="red-text">46</p>
+              </div>
+              <div class="box-text">
+                <p class="followers-info">Followers</p>
+                <p class="red-text">27</p>
+              </div>
+              <div class="box-text">
+                <p class="followers-info">Following</p>
+                <p class="red-text">34</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id = "center-box">
+          <textarea id="writte-tweet"name="tweet" rows="6" cols="60" placeholder="What's happening?"></textarea>
+          <input id= "count-box" type="text" name=characteres>
+          <button id = "btn" type="button" >TWEET</button>
+        </section>
+        <section id = "aside-right" class="aside">
+          <div class="header-aside">
+            <ul>
+              <li class="inline-boxes"><h3>Who to Follow</h3></li>
+              <li class="inline-boxes small-text">Refresh</li>
+              <li class="inline-boxes small-text">View All</li>
+            </ul>
+          </div>
+          <div class="container-celebrities">
+            <figure class="inline-boxes">
+              <img class="small-imgs"src="assets/images/gigi.jpg" alt="gigi">
+            </figure>
+            <div class="inline-boxes celebrities">
+              <ul>
+                <li class="inline-boxes">Gigi Hadid</li>
+                <li class="inline-boxes"><i class="fa fa-check-circle" aria-hidden="true"></i></li>
+                <li class="inline-boxes">@GigiHadid</li>
+              </ul>
+            </div>
+           </div>
+            <div class="container-celebrities">
+              <figure class="inline-boxes">
+                <img class="small-imgs"src="assets/images/ozzy.jpg" alt="gigi">
+              </figure>
+              <div class="inline-boxes celebrities">
+                <ul>
+                  <li class="inline-boxes">Ozzy Osbourne</li>
+                  <li class="inline-boxes"><i class="fa fa-check-circle" aria-hidden="true"></i></li>
+                  <li class="inline-boxes">@OzzyOsb</li>
+                </ul>
+              </div>
+            </div>
+              <div class="container-celebrities">
+                <figure class="inline-boxes">
+                  <img class="small-imgs"src="assets/images/eddie.jpg" alt="gigi">
+                </figure>
+                <div class="inline-boxes celebrities">
+                  <ul>
+                    <li class="inline-boxes">Eddie Redmayne</li>
+                    <li class="inline-boxes"><i class="fa fa-check-circle" aria-hidden="true"></i></li>
+                    <li class="inline-boxes">@EdRdm</li>
+                  </ul>
+                </div>
+          </div>
+        </section>
       </div>
-      <textarea id="writte-tweet"name="tweet" rows="12" cols="80"></textarea>
-      <input id= "count-box" type="text" name=characteres>
-      <button id = "btn" type="button" >TWEET</button>
-    </div>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
