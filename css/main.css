@@ -69,3 +69,11 @@ body {
   border-radius: 10px;
   height: 70px;
 }
+#count-box {
+  text-align: center;
+  background:rgb(249, 249, 249);
+  height: 30px;
+  width: 35px;
+  float:right;
+  margin-right: 2%;
+}
