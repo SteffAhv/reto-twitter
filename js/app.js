@@ -1,42 +1,23 @@
-  var button = document.getElementById('btn');
-  var textArea = document.getElementById('writte-tweet');
-  var countBox = document.getElementById('count-box');
-  var textValue = textArea.value;
-  var countCharacters = textValue.length;
-  var charactersAllowed = 140;
+$(document).ready(function() {
+ var tweet = $('#writte-tweet');
+ var btn = $('#btn');
+ $('.newBox').text("");
+// console.log(tweet.val());
+// console.log(btn);
+    $(btn).on('click', function(){
 
-  // Se añade un evento al textArea
+        $('<div id =newBox class=newBox></div>').appendTo('body');
+        $('.newBox').css('background', 'skyblue');
+        $('.newBox').css('height', '150px');
+        // agregando el texto al nuevo div 
+        $('.newBox:last-child').text(tweet.val());
+        // $('.newBox').text(tweet.val());  cambia el texto a todas las cajas
+        // $('#newBox').html($(tweet).val() );  cambia el texto solo a la primera caja
 
-  textArea.addEventListener('keydown', function(e) {
-    countBox.value = charactersAllowed - textArea.value.length;
-    if(countBox.value >= 120) {
-     countBox.style.color = 'rgb(14, 194, 75)';
-     countBox.style.fontWeight = 'bold';
-   } else if(countBox.value < 120) {
-     countBox.style.color = 'rgb(233, 26, 26)';
-     countBox.style.fontWeight = 'bold';
-   }
-  });
-  /*textArea.addEventListener('click', function(e) {
-    if (textArea.textLength === 0) {
-      button.disabled = true;
-      button.style.background = "grey";
-    } else {
-      button.disabled = false;
-    }
-  });*/
-  button.addEventListener('click', function(e){
-    var tweetText = document.getElementById('writte-tweet').value;
-    var tweetBox = document.createElement('div');
-    var replaceText = document.createTextNode(tweetText);
-    var setDate = moment().format('MMMM Do YYYY, h:mm:ss a')
-    var date = document.createElement('p')
-    var dateText = date.textContent = setDate;
-    tweetBox.appendChild(replaceText);
-    tweetBox.appendChild(date);
-    textArea.value = "";
-    document.body.appendChild(tweetBox);
-    tweetBox.classList.add("tweet-box");
-    date.classList.add("date");
+        // limpiando el text area
+        $('#writte-tweet').val('');
+    });
 
-  });
+
+
+});

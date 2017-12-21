@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Replica Twitter</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/21b158d175.js"></script>
   </head>
   <body>
@@ -19,82 +20,87 @@
         <li class="tools-nav"><input type="text" placeholder ="Search Twitter"></li>
       </ul>
     </header>
-    <div id="wrapper">
-        <section id = "aside-left" class="aside">
-          <div class="img-cover"></div>
-          <img class="img-ballon"src="assets/images/photo.jpg">
-          <div>
-            <div class="user-info">
-              <h1 class="followers-info">Esthefany HV</h1>
-              <h3 class="followers-info">@SteffAhv</h3>
+    <div class="container">
+      <div class="row">
+        <div id="wrapper">
+          <section id = "aside-left" class="col-xs-12 col-md-4 aside">
+            <div class="img-cover"></div>
+            <img class="img-ballon"src="assets/images/photo.jpg">
+            <div>
+              <div class="user-info">
+                <h1 class="followers-info">Esthefany HV</h1>
+                <h3 class="followers-info">@SteffAhv</h3>
+              </div>
+              <div class="user-data">
+                <div class="box-text">
+                  <p class="followers-info">Tweets</p>
+                  <p class="red-text">46</p>
+                </div>
+                <div class="box-text">
+                  <p class="followers-info">Followers</p>
+                  <p class="red-text">27</p>
+                </div>
+                <div class="box-text">
+                  <p class="followers-info">Following</p>
+                  <p class="red-text">34</p>
+                </div>
+              </div>
             </div>
-            <div class="user-data">
-              <div class="box-text">
-                <p class="followers-info">Tweets</p>
-                <p class="red-text">46</p>
-              </div>
-              <div class="box-text">
-                <p class="followers-info">Followers</p>
-                <p class="red-text">27</p>
-              </div>
-              <div class="box-text">
-                <p class="followers-info">Following</p>
-                <p class="red-text">34</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id = "center-box">
-          <textarea id="writte-tweet"name="tweet" rows="6" cols="60" placeholder="What's happening?"></textarea>
-          <input id= "count-box" type="text" name=characteres>
-          <button id = "btn" type="button" >TWEET</button>
-        </section>
-        <section id = "aside-right" class="aside">
-          <div class="header-aside">
-            <ul>
-              <li class="inline-boxes"><h3>Who to Follow</h3></li>
-              <li class="inline-boxes small-text">Refresh</li>
-              <li class="inline-boxes small-text">View All</li>
-            </ul>
-          </div>
-          <div class="container-celebrities">
-            <figure class="inline-boxes">
-              <img class="small-imgs"src="assets/images/gigi.jpg" alt="gigi">
-            </figure>
-            <div class="inline-boxes celebrities">
+          </section>
+          <section id = "center-box col-xs-12 col-md-4">
+            <textarea id="writte-tweet"name="tweet" rows="6" cols="60" placeholder="What's happening?"></textarea>
+            <input id= "count-box" type="text" name=characteres>
+            <button id = "btn" type="button" >TWEET</button>
+          </section>
+          <section id = "aside-right" class="aside col-xs-12 col-md-4">
+            <div class="header-aside">
               <ul>
-                <li class="inline-boxes">Gigi Hadid</li>
-                <li class="inline-boxes"><i class="fa fa-check-circle" aria-hidden="true"></i></li>
-                <li class="inline-boxes">@GigiHadid</li>
+                <li class="inline-boxes"><h3>Who to Follow</h3></li>
+                <li class="inline-boxes small-text">Refresh</li>
+                <li class="inline-boxes small-text">View All</li>
               </ul>
             </div>
-           </div>
             <div class="container-celebrities">
               <figure class="inline-boxes">
-                <img class="small-imgs"src="assets/images/ozzy.jpg" alt="gigi">
+                <img class="small-imgs"src="assets/images/gigi.jpg" alt="gigi">
               </figure>
               <div class="inline-boxes celebrities">
                 <ul>
-                  <li class="inline-boxes">Ozzy Osbourne</li>
+                  <li class="inline-boxes">Gigi Hadid</li>
                   <li class="inline-boxes"><i class="fa fa-check-circle" aria-hidden="true"></i></li>
-                  <li class="inline-boxes">@OzzyOsb</li>
+                  <li class="inline-boxes">@GigiHadid</li>
                 </ul>
               </div>
-            </div>
+             </div>
               <div class="container-celebrities">
                 <figure class="inline-boxes">
-                  <img class="small-imgs"src="assets/images/eddie.jpg" alt="gigi">
+                  <img class="small-imgs"src="assets/images/ozzy.jpg" alt="gigi">
                 </figure>
                 <div class="inline-boxes celebrities">
                   <ul>
-                    <li class="inline-boxes">Eddie Redmayne</li>
+                    <li class="inline-boxes">Ozzy Osbourne</li>
                     <li class="inline-boxes"><i class="fa fa-check-circle" aria-hidden="true"></i></li>
-                    <li class="inline-boxes">@EdRdm</li>
+                    <li class="inline-boxes">@OzzyOsb</li>
                   </ul>
                 </div>
-          </div>
-        </section>
+              </div>
+                <div class="container-celebrities">
+                  <figure class="inline-boxes">
+                    <img class="small-imgs"src="assets/images/eddie.jpg" alt="gigi">
+                  </figure>
+                  <div class="inline-boxes celebrities">
+                    <ul>
+                      <li class="inline-boxes">Eddie Redmayne</li>
+                      <li class="inline-boxes"><i class="fa fa-check-circle" aria-hidden="true"></i></li>
+                      <li class="inline-boxes">@EdRdm</li>
+                    </ul>
+                  </div>
+            </div>
+          </section>
+        </div>
       </div>
+    </div>
+    <script src="vendors/js/jquery-3.2.1.min.js"></script>
     <script src="js/moment.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
